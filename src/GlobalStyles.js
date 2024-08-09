@@ -85,6 +85,7 @@ const GlobalStyles = createGlobalStyle`
         display:flex;
         justify-content: space-between;
         align-content: center;
+        z-index: 1;
     }
     h2{
         color: var(--accent);
