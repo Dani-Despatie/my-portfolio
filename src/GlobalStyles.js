@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0px;
         line-height: 1.3em;
         font-size: 1.6em;
+        padding: 0 10px;
     }
     button {
         cursor: pointer;
