@@ -14,8 +14,10 @@ const AboutMe = () => {
             <h2>About me</h2>
             <img src={profilePic} alt="profile picture" className='profile-pic'/>
             <p>
-                I am a full stack web developper from Montréal who loves learning new skills and figuring out how to apply them.
-                I also play games, play music, crochet, and occasionally draw.
+                My name is Danielle Despatie. I'm a full stack web developper from Montréal who loves learning new skills and figuring out how to apply them.
+                As a former Physics student and Teaching Assistant, I also have plenty of experience 
+                with Mathematics, and creating understandable instructions and diagrams to communicate ideas.
+                <br/>In my free time I play games, play music, crochet, and occasionally draw.
 
             </p>
             <p>I have experience with</p>
