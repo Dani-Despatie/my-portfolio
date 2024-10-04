@@ -68,12 +68,15 @@ const GlobalStyles = createGlobalStyle`
         align-items: center;
         padding: 10px;
     }
+    .img-container {
+        text-align: center;
+    }
     .project {
         border: 2px solid var(--accent);
-        width: 60%;
+        width: 65%;
         max-width: 400px;
         margin: auto;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.2s ease-in-out;
     }
     
     
@@ -125,7 +128,7 @@ const GlobalStyles = createGlobalStyle`
             margin: 0 20px 0 0;
         }
         .project:hover {
-            transform: scale(1.2);
+            transform: scale(1.07);
         }
         .skill-grid {
             grid-template-columns: auto auto auto;
