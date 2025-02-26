@@ -10,14 +10,14 @@ import Contact from "./Sections/Contact";
 
 const App = () => {
     return (
-        <Router>
+        <>
             <GlobalStyles/>
 
             <Banner/>
             <AboutMe/>
             <Projects/>
             <Contact/>
-        </Router>
+        </>
     )
 }
 
