@@ -2,6 +2,7 @@ import styled from 'styled-components';
 // Images
 import ecommerce from '../images/e-commerce.png';
 import tasteBuddies from '../images/taste-buddies.png';
+import spotifyCsv from '../images/spotify-csv.png';
 
 const Projects = () => {
     return (
@@ -39,6 +40,25 @@ const Projects = () => {
                     <p>
                         My work was mainly on the back-end, but I also created and
                         implemented some front-end logic and played a significant role in the overall styling of the page.
+                    </p>
+                </div>
+            </div>
+
+            <div className = 'project-grid'>
+                <div className = 'img-container'>
+                    <a href = 'https://github.com/Dani-Despatie/SpotifyPlaylistProject'>
+                        <img src = {spotifyCsv} alt = 'Spotify to CSV Project' className = 'project' />
+                    </a>
+                </div>
+                <div>
+                    <h3>Spotify Playlist to CSV Project</h3>
+                    <p>
+                        This is a little project I made for someone I know who needed track listings for a Spotify playlist to be exported to an Excel file.
+                    </p>
+                    <p>
+                        This website uses the Spotify API to get the listed songs in a playlist, and output the titles, artists, and song length in a downloadable csv file.
+                        In order for the Spotify API to function it also requires getting permission from the user to access their account data, 
+                        and using access tokens and refresh tokens to request the information.
                     </p>
                 </div>
             </div>

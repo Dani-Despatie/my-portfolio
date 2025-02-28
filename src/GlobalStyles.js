@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
         --banner: #0E4686;
         --text: #E4E4E4;
         --accent: #6897CE;
-        --accent-light: #B3C5DA;
+        --accent-light: #BAC9DA;
         --accent2: #8D3B72;
         --shadow: drop-shadow(5px 5px #00000077);
     }
