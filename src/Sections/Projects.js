@@ -11,10 +11,10 @@ const Projects = () => {
             <div className='project-grid'>
                 <div className='img-container'>
                     <a href='https://github.com/Dani-Despatie/Taste-Buddies'>
-                        <img src={tasteBuddies} alt="Taste Buddies" className='project' />
+                        <img src={tasteBuddies} alt="Taste Buddies" />
                     </a>
                 </div>
-                <div>
+                <div className = 'desc'>
                     <h3>Taste Buddies</h3>
                     <p>
                         A recipe sharing website where users can find recipes, post and edit their own recipes,
@@ -29,10 +29,10 @@ const Projects = () => {
             <div className='project-grid'>
                 <div className='img-container'>
                     <a href='https://github.com/Dani-Despatie/project-GROUP-e-commerce'>
-                        <img src={ecommerce} alt="E-Commerce Project" className='project' />
+                        <img src={ecommerce} alt="E-Commerce Project" />
                     </a>
                 </div>
-                <div>
+                <div className = 'desc'>
                     <h3>Group E-Commerce Project</h3>
                     <p>
                         This was a group project for Concordia's Web Development program.
@@ -47,10 +47,10 @@ const Projects = () => {
             <div className = 'project-grid'>
                 <div className = 'img-container'>
                     <a href = 'https://github.com/Dani-Despatie/SpotifyPlaylistProject'>
-                        <img src = {spotifyCsv} alt = 'Spotify to CSV Project' className = 'project' />
+                        <img src = {spotifyCsv} alt = 'Spotify to CSV Project' />
                     </a>
                 </div>
-                <div>
+                <div className = 'desc'>
                     <h3>Spotify Playlist to CSV Project</h3>
                     <p>
                         This is a little project I made for someone I know who needed track listings for a Spotify playlist to be exported to an Excel file.
@@ -72,10 +72,9 @@ export default Projects;
 const Section = styled.section`
     padding: 70px 0;
     
-    .project {
+    img {
         border: 2px solid var(--accent2);
-        width: 65%;
-        max-width: 400px;
+        max-width: 300px;
         margin: auto;
         transition: transform 0.2s ease-in-out;
     }
@@ -92,13 +91,19 @@ const Section = styled.section`
     .img-container {
         text-align: center;
     }
+
     img {
         filter: var(--shadow);
     }
 
     @media screen and (min-width: 1540px) {
+        img {
+            max-width: 350px;
+        }
+
         .project-grid {
-            grid-template-columns: 40vw auto;
+            grid-template-columns: auto auto;
+            min-height: 380px;
             text-align: left;
             margin: 30px 0;
         }
@@ -106,5 +111,9 @@ const Section = styled.section`
         .project-grid div {
             margin: 0 20px 0 0;
         }
+
+        .desc {
+        padding: 0px 0px 0px 30px;
+    }
     }
 `;
